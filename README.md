@@ -18,22 +18,41 @@ Example output: Green is on for 5 minute and yellow is on for 30 seconds. This o
 running
 
 Initial State: EastWest is red
+
 Initial State: NorthSouth is red
+
 NorthSouth is now green
+
 NorthSouth is now yellow
+
 NorthSouth is now red
+
 EastWest is now green
+
 EastWest is now yellow
+
 EastWest is now red
+
 NorthSouth is now green
+
 NorthSouth is now yellow
+
 NorthSouth is now red
+
 EastWest is now green
+
 EastWest is now yellow
+
 EastWest is now red
+
 NorthSouth is now green
+
 NorthSouth is now yellow
+
 NorthSouth is now red
+
 EastWest is now green
+
 EastWest is now yellow
+
 EastWest is now red
