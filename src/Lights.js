@@ -8,7 +8,7 @@ module.exports = Light = function(_lightName, ee){
     this.ee = ee;
 }
 
-Light.OnTimer = 300*1000;
+Light.OnTimer = 270*1000;
 Light.yellowTimer = 30*1000;
 
 Light.LightStates = {red:"red", yellow:"yellow", green:"green"};
