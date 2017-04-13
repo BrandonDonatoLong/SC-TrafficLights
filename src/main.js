@@ -7,8 +7,8 @@ var EventEmitter = require('events');
 var ee = new EventEmitter();
 
 //Both lights start in red state
-var NorthSouth = new Lights("NorthSouth", ee);
-var EastWest = new Lights("EastWest", ee);
+var NorthSouth = new Lights("NorthSouth", ee, [7,0,2]);
+var EastWest = new Lights("EastWest", ee, [7,0,2]);
 console.log("Initial State: "+ EastWest.lightName, "is", EastWest.lightState)
 console.log("Initial State: "+ NorthSouth.lightName, "is", NorthSouth.lightState)
 
