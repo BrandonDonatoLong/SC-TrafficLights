@@ -39,7 +39,7 @@ Light.States = {
 Light.prototype.cycleLight = function(){
     var stateChangeObject = Light.States[this.lightState];
     this.lightState = stateChangeObject.changeTo;
-    this.leds.changeLedSet(stateChangeObject.ledState);
+    this.leds.changeLedSet(Light.States[this.lightState].ledState);
     var _this = this;
     console.log(this.lightName, 'is now', this.lightState);
     setTimeout(function(){
@@ -48,7 +48,7 @@ Light.prototype.cycleLight = function(){
 
         if (_this.lightState == Light.LightStates.yellow) {
             _this.lightState = Light.LightStates.red;
-            _this.leds.changeLedSet(stateChangeObject.ledState);
+            _this.leds.changeLedSet(Light.States[Light.LightStates.red].ledState);
             console.log(_this.lightName, 'is now', _this.lightState)
             _this.ee.emit('switchLight', _this);
         }
