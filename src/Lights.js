@@ -10,6 +10,7 @@ module.exports = Light = function(_lightName, ee, pinArray){
     this.ee = ee;
 
     this.leds = new LEDSet(pinArray);
+    this.leds.changeLedSet([1,0,0]);
 }
 
 Light.OnTimer = 5*1000;
