@@ -8,7 +8,7 @@ var ee = new EventEmitter();
 
 //Both lights start in red state
 var NorthSouth = new Lights("NorthSouth", ee, [7,0,2]);
-var EastWest = new Lights("EastWest", ee, [7,0,2]);
+var EastWest = new Lights("EastWest", ee, [3,4,5]);
 console.log("Initial State: "+ EastWest.lightName, "is", EastWest.lightState)
 console.log("Initial State: "+ NorthSouth.lightName, "is", NorthSouth.lightState)
 

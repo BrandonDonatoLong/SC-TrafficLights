@@ -12,8 +12,8 @@ module.exports = Light = function(_lightName, ee, pinArray){
     this.leds = new LEDSet(pinArray);
 }
 
-Light.OnTimer = 270*1000;
-Light.yellowTimer = 30*1000;
+Light.OnTimer = 5*1000;
+Light.yellowTimer = 3*1000;
 
 Light.LightStates = {red:"red", yellow:"yellow", green:"green"};
 

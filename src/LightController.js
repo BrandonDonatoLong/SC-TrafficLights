@@ -18,6 +18,7 @@ module.exports = LEDSet = function(pinArray){
     this.pinArray = [];
     for(var pinIndex in pinArray){
         wiringPi.pinMode(pinArray[pinIndex], wiringPi.OUTPUT);
+        wiringPi.digitalWrite(this.pinArray[ledIndex],1);
         this.pinArray.push(pinArray[pinIndex]);
     }
 };
